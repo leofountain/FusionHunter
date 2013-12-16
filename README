@@ -1,0 +1,55 @@
+########################
+# version1.4
+# modification 2012/06/09
+##########################
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <2011>  <Yang Li (yangli9@illinois.edu)>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+############################
+To install FusionHunter
+type:
+./install.sh
+
+FusionHunter utilize perl package ForkManager. install.sh shall help you install ForkManager Package.
+To install ForkManager package, you should have sudo permission
+
+
+
+
+####################
+FusionHunter use Bowtie as alignment tool. The bowtie and bowtie-build (all for 64-bit) are in path of FusionHunter/bin, 
+if your mathine type is 32-bit, you can copy the executable file 'bowtie', 'bowtie-build' in FusionHunter/src/bowtie-0.12.7-linux-i386/ 
+into FusionHunter/bin (replace the original ones for 64-bit)
+####################
+
+
+To run FusionHunter
+copy the file FusionHunter.cfg to your working dir and edit variables in FusionHunter.cfg as indicated
+then type following in your working dir:
+DirtoFusionHunter/bin/FusionHunter.pl FusionHunter.cfg
+
+
+
+For more information, please see http://bioen-compbio.bioen.illinois.edu/FusionHunter/
+
+#######################
+Please cite: 
+
+Li Y, Chien J, Smith DI, and Ma J. FusionHunter: identifying fusion transcripts in cancer using paired-end RNA-seq. Bioinformatics, 27(12):1708-10, 2011.
